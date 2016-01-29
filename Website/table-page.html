@@ -1,0 +1,2050 @@
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> </meta>
+      <meta charset="utf-8" />
+      <!--meta http-equiv="X-UA-Compatible" content="IE=edge" /-->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <title>LB Group 2</title>
+      <link href="css/bootstrap.css" rel="stylesheet" />
+      <link href="css/scrolling-nav.css" rel="stylesheet" />
+   </head>
+   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+         <div class="container">
+            <div class="navbar-header page-scroll"><a class="navbar-brand page-scroll"
+                  href="index.html#genomaanalise" style="font-size:13pt">Home</a></div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse"> </div>
+         </div>
+      </nav>
+      <section id="intro" class="table-section">
+         <div class="center"> <h1>Annotating the <i> Treponema pallidum pallidum </i> Genome</h1></div>
+
+         <br />
+         <div class="justifyc">
+            <p>The table was generated using the information present on NCBI <a
+                  href="index.html#bibliography">[5]</a>. We used bioinformatics tools like
+               Biopython <a href="index.html#bibliography">[6]</a> , BRENDA <a
+                  href="index.html#bibliography">[7]</a>, KEGG <a href="index.html#bibliography"
+                  >[8]</a>,membrane transport database <a href="index.html#bibliography">[9]</a> and
+               CDD <a href="index.html#bibliography">[10]</a> to create and complete the table. </p>
+            <p>This table has information such as: protein name, protein ID, Swissprot number, among
+               others, and a protein's report each protein added by us. On these reports are
+               included a summary about the protein's functions and the sources that we used to get
+               the information. </p>
+         </div>
+
+                     (<a ng-href="" title="Legend" data-toggle="popover"
+                        data-placement="right" id="test"><span class="badge"></span> See and Close
+                        the Legend</a>)
+                        <br/>
+                        <br/>
+         <table class="search-table">
+            <tr>
+               <td style="text-align: right; padding-right: 15px;">
+                  <label for="search">Enter keyword to search</label></td>
+               <td>
+                  <input type="text" id="search" class="form-control" />
+               </td>
+               <td style="padding-left: 15px;">
+                  <label> e.g. 1, 50, Metabolism, Transport, ... </label></td>
+            </tr>
+         </table>
+         <div class="table-page">
+
+            <table id="tblData" class="table table-hover table-responsive">
+               <caption> Table 2 - Extracted information about all the proteins known between
+                  position 131901bp to 241800bp of genome from the gene bank file using biopython. </caption>
+
+               <thead>
+                  <tr>
+                     <th class="centerednr">#</th>
+                     <th class="centeredec">EC_Number</th>
+                     <th class="centeredge">GeneID</th>
+                     <th class="centeredsw">Swissprot</th>
+                     <th class="centeredlc">Locus tag</th>
+                     <th class="centerednp">Name Product</th>
+                     <th class="centeredpi">Protein ID</th>
+                     <th class="centeredst">Strand</th>
+                     <th class="centeredse">Sequence</th>
+                     <th class="centeredle">Length</th>
+                     <th class="centeredcl">Class</th>
+                     <th class="centeredbr">Blast Result</th>
+                     <th class="centeredre">Report</th>
+                  </tr>
+               </thead>
+               <tbody>
+
+                  <tr>
+                     <td class="metabolism pos">1</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2610901</td>
+                     <td class="metabolism swiss">O83153.1</td>
+                     <td class="metabolism locus">TP_RS00595</td>
+                     <td class="metabolism nameproduct"
+                        >hydroxymethylpyrimidine/ phosphomethylpyrimidine kinase</td>
+                     <td class="metabolism protein">WP_010881564.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MVKLLSIGGS ... GNLSKWRDRFH</td>
+                     <td class="metabolism length">269</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">-</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_1.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">2</td>
+                     <td class="procDNA ecnumber"></td>
+                     <td class="procDNA geneid">2610902</td>
+                     <td class="procDNA swiss"></td>
+                     <td class="procDNA locus">TP_RS00600</td>
+                     <td class="procDNA nameproduct">excinuclease ABC subunit B</td>
+                     <td class="procDNA protein">WP_010881565.1</td>
+                     <td class="procDNA strand">+1</td>
+                     <td class="procDNA sequence">MKEFKLHASF ... QLQRQDEQNGV</td>
+                     <td class="procDNA length">668</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">O83154 e-value= 0.0</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/Prot_2.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">3</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610909</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00605</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881566.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MGRQVMQAGV ... GTLVCGMKVTW</td>
+                     <td class="unknown length">598</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">No results</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_null.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">4</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610915</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00610</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881567.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MFADKSLSAL ... VLSVPQEKASV</td>
+                     <td class="unknown length">421</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83155 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">5</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2610916</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00615</td>
+                     <td class="transport nameproduct">methionine ABC transporter permease</td>
+                     <td class="transport protein">WP_010881568.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MANQTLWLLV ... RIICTRIRARR</td>
+                     <td class="transport length">219</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">No results</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_ABC.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">6</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2610922</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00620</td>
+                     <td class="transport nameproduct">ABC transporter</td>
+                     <td class="transport protein">WP_010881569.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MVRLERLKKT ... CAVHAIDKAHW</td>
+                     <td class="transport length">269</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">No results</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_ABC.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">7</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2610929</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00625</td>
+                     <td class="metabolism nameproduct">KamA family radical SAM protein</td>
+                     <td class="metabolism protein">WP_014342769.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MAECTREQRK ... GIDGAWYTYPF</td>
+                     <td class="metabolism length">353</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">O83158 e-value=0.0</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_7.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">8</td>
+                     <td class="metabolism ecnumber">4.1.1.32</td>
+                     <td class="metabolism geneid">2610930</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00630</td>
+                     <td class="metabolism nameproduct">phosphoenolpyruvate carboxykinase</td>
+                     <td class="metabolism protein">WP_010881571.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MELHEIAHAR ... SEGAACTRDMC</td>
+                     <td class="metabolism length">618</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">O83159 e-value=0.0</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_8.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">9</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610935</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00635</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_014342770.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MLCIYVELPY ... LFAAAQANKLI</td>
+                     <td class="unknown length">809</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83160 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">10</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2610941</td>
+                     <td class="procRNA swiss"></td>
+                     <td class="procRNA locus">TP_RS00640</td>
+                     <td class="procRNA nameproduct">GTP-binding protein YchF</td>
+                     <td class="procRNA protein">WP_010881573.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MAVNCGIIGL ... DGDVIFFKFNV</td>
+                     <td class="procRNA length">368</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">No results </td>
+                     <td class="procRNA report"><a target="_blank" href="reports/Prot_10.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">11</td>
+                     <td class="procDNA ecnumber"></td>
+                     <td class="procDNA geneid">2610942</td>
+                     <td class="procDNA swiss"></td>
+                     <td class="procDNA locus">TP_RS00645</td>
+                     <td class="procDNA nameproduct">exodeoxyribonuclease III</td>
+                     <td class="procDNA protein">WP_010881574.1</td>
+                     <td class="procDNA strand">+1</td>
+                     <td class="procDNA sequence">MRPVQRIISW ... DHCPVCLTYAD</td>
+                     <td class="procDNA length">264</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">No results</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/Prot_11.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">12</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">23365973</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00650</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_014342713.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MKQLKWWAVG ... IAAGVDVRYHL</td>
+                     <td class="unknown length">223</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83163 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">13</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">23365974</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00655</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein"></td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence"> ... </td>
+                     <td class="unknown length">0</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">No results</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_null.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">14</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">25249124</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS05245</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_025267555.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MFPCTVLEAL ... YAVRIGPVFRV</td>
+                     <td class="unknown length">77</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">No results</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_null.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">15</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610955</td>
+                     <td class="unknown swiss">O83165.1</td>
+                     <td class="unknown locus">TP_RS00660</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881577.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MEFLRATASR ... GATIFFRCNAP</td>
+                     <td class="unknown length">115</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">16</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">23365975</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00665</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_014342775.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MERGFLCEGD ... GWRSRVRSWPC</td>
+                     <td class="unknown length">112</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">No results</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_null.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">17</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610968</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00670</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881566.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MGRQVMQAGV ... GTLVCGMKVTW</td>
+                     <td class="unknown length">598</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">No results</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_null.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">18</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610974</td>
+                     <td class="unknown swiss">O83168.1</td>
+                     <td class="unknown locus">TP_RS00675</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881580.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MEPRMSGSNL ... RLFFIFTSHIP</td>
+                     <td class="unknown length">69</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">19</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610980</td>
+                     <td class="unknown swiss">O83169.2</td>
+                     <td class="unknown locus">TP_RS00680</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881581.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MMARSRCVHR ... FDSAAQKWNRE</td>
+                     <td class="unknown length">410</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">20</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610981</td>
+                     <td class="unknown swiss">O83170.1</td>
+                     <td class="unknown locus">TP_RS00685</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881582.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MCKPRVWRIA ... FDTATNTWNRE</td>
+                     <td class="unknown length">376</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">21</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">25249125</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS05250</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein"></td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence"> ... </td>
+                     <td class="unknown length">0</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_null.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">22</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2610999</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00710</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881584.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MGRSTMDTQY ... FDTTTCSWNRE</td>
+                     <td class="unknown length">495</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">No results</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_null.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">23</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611006</td>
+                     <td class="unknown swiss">O83174.1</td>
+                     <td class="unknown locus">TP_RS00715</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881586.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MQPPRPACQD ... QPASDEPLSLA</td>
+                     <td class="unknown length">245</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">24</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611012</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00720</td>
+                     <td class="transport nameproduct">potassium transporter Trk</td>
+                     <td class="transport protein">WP_010881587.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MAVKRNFAVV ... HNRDLRELTQI</td>
+                     <td class="transport length">230</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">No results</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_k.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">25</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611013</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00725</td>
+                     <td class="transport nameproduct">potassium transporter</td>
+                     <td class="transport protein">WP_010881588.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MRPMHIGNLT ... VEYACGDLAIG</td>
+                     <td class="transport length">575</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">No results</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_k.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">26</td>
+                     <td class="procDNA ecnumber"></td>
+                     <td class="procDNA geneid">2611019</td>
+                     <td class="procDNA swiss"></td>
+                     <td class="procDNA locus">TP_RS00730</td>
+                     <td class="procDNA nameproduct">methylated-DNA--protein-cysteine
+                        methyltransferase</td>
+                     <td class="procDNA protein">WP_010881589.1</td>
+                     <td class="procDNA strand">+1</td>
+                     <td class="procDNA sequence">MSVHQGGIRF ... LQQEAAVCACE</td>
+                     <td class="procDNA length">177</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">No results</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/Prot_26.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">27</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611025</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00735</td>
+                     <td class="transport nameproduct">thiamine ABC transporter ATP-binding
+                        protein</td>
+                     <td class="transport protein">WP_010881590.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MDNRPYVVVQ ... TQPPLAAAKNA</td>
+                     <td class="transport length">220</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">No results</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_ABC.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">28</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611026</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00740</td>
+                     <td class="transport nameproduct">thiamine ABC transporter permease</td>
+                     <td class="transport protein">WP_010881591.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MPRCSSGITR ... GVHRCKEYSYG</td>
+                     <td class="transport length">593</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">No results</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_ABC.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">29</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611032</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00745</td>
+                     <td class="transport nameproduct">thiamine ABC transporter substrate-binding
+                        protein</td>
+                     <td class="transport protein">WP_010881592.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MAHRMRVVFC ... AAAAALHASTP</td>
+                     <td class="transport length">335</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">No results</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_ABC.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">30</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611038</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00750</td>
+                     <td class="metabolism nameproduct">long-chain-fatty-acid--CoA ligase</td>
+                     <td class="metabolism protein">WP_010881593.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MSVCCTSSEE ... LYAKEIAQLFS</td>
+                     <td class="metabolism length">656</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_30.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">31</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">23365980</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00765</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_025267562.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MNLWSLCFLF ... LGALGALCFGN</td>
+                     <td class="unknown length">192</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">No results</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_null.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">32</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611051</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00770</td>
+                     <td class="metabolism nameproduct">alpha-amylase</td>
+                     <td class="metabolism protein">WP_010881594.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MKKGDNTKIR ... LFLKAFSTKKR</td>
+                     <td class="metabolism length">619</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_32.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">33</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611057</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00775</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881595.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MVTMVPPLFF ... PIPAAGMRTRL</td>
+                     <td class="unknown length">192</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83183 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">34</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611058</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00780</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881596.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MSKYTVKRAS ... NDHTPSLRSEW</td>
+                     <td class="unknown length">197</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83184 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">35</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611064</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00785</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_014342301.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MCGGVAMTYN ... IEHLHQTVAYE</td>
+                     <td class="unknown length">161</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83185 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">36</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611070</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00790</td>
+                     <td class="metabolism nameproduct">NADH dehydrogenase</td>
+                     <td class="metabolism protein">WP_010881598.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MRTAEYKHAP ... YVRRRRYDVQH</td>
+                     <td class="metabolism length">339</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_36.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">37</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611071</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00795</td>
+                     <td class="metabolism nameproduct">NADH dehydrogenase (ubiquinone), subunit
+                        RnfC</td>
+                     <td class="metabolism protein">WP_014342780.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MIERLRSSRG ... TIREAPANAHR</td>
+                     <td class="metabolism length">494</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_37.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">38</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611077</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00800</td>
+                     <td class="metabolism nameproduct">phosphatidic acid phosphatase</td>
+                     <td class="metabolism protein">WP_010881600.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MDGGYFLGQL ... TSALFYSSMSP</td>
+                     <td class="metabolism length">163</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_38.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">39</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611083</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00805</td>
+                     <td class="metabolism nameproduct">pseudouridylate synthase</td>
+                     <td class="metabolism protein">WP_041610072.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MCAILGRLYP ... PQDTAVCTPEG</td>
+                     <td class="metabolism length">404</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_39.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">40</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611084</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00810</td>
+                     <td class="metabolism nameproduct">peptidase M23</td>
+                     <td class="metabolism protein">WP_010881602.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MSVYCRSSKQ ... PTSLLRMRTLP</td>
+                     <td class="metabolism length">371</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_40.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">41</td>
+                     <td class="metabolism ecnumber">EC 3.1.2.23</td>
+                     <td class="metabolism geneid">2611090</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00815</td>
+                     <td class="metabolism nameproduct">4-hydroxybenzoyl-CoA thioesterase</td>
+                     <td class="metabolism protein">WP_010881603.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MNFSLEFPVR ... EYLVPALYPNY</td>
+                     <td class="metabolism length">134</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_41.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">42</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611096</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00820</td>
+                     <td class="metabolism nameproduct">glycerol-3-phosphate O-acyltransferase</td>
+                     <td class="metabolism protein">WP_010881604.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MSIHSLQQTF ... MHEHNERERLS</td>
+                     <td class="metabolism length">300</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_42.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">43</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611097</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00825</td>
+                     <td class="metabolism nameproduct">haloacid dehalogenase</td>
+                     <td class="metabolism protein">WP_010881605.1</td>
+                     <td class="metabolism strand">-1</td>
+                     <td class="metabolism sequence">MLNWSIPVIR ... HLARLAQGDNQ</td>
+                     <td class="metabolism length">228</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">No results</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_43.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">44</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611103</td>
+                     <td class="unknown swiss">O83194.1</td>
+                     <td class="unknown locus">TP_RS00830</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881606.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MYIKVALVCL ... DTLIETIRTKN</td>
+                     <td class="unknown length">342</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">45</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611109</td>
+                     <td class="procRNA swiss"></td>
+                     <td class="procRNA locus">TP_RS00835</td>
+                     <td class="procRNA nameproduct">proline--tRNA ligase</td>
+                     <td class="procRNA protein">WP_014342307.1</td>
+                     <td class="procRNA strand">-1</td>
+                     <td class="procRNA sequence">MKMSAFFAPT ... LLEQLASPESS</td>
+                     <td class="procRNA length">619</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83195 e-value=0.0</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/Prot_45.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">46</td>
+                     <td class="procDNA ecnumber">3.1.22.4</td>
+                     <td class="procDNA geneid">2611116</td>
+                     <td class="procDNA swiss">P96115.2</td>
+                     <td class="procDNA locus">TP_RS00840</td>
+                     <td class="procDNA nameproduct">Holliday junction DNA helicase RuvB</td>
+                     <td class="procDNA protein">WP_010881609.1</td>
+                     <td class="procDNA strand">-1</td>
+                     <td class="procDNA sequence">MDHTASLSPV ... TPHSPEQGTLL</td>
+                     <td class="procDNA length">350</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">-</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/Prot_46.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">47</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611122</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00845</td>
+                     <td class="transport nameproduct">periplasmic zinc-binding protein TroA</td>
+                     <td class="transport protein">WP_010881610.1</td>
+                     <td class="transport strand">+1</td>
+                     <td class="transport sequence">MIRERICACV ... NIDTIVAALAR</td>
+                     <td class="transport length">308</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">P96116 e-value=0.0</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_47.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">48</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611123</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00850</td>
+                     <td class="transport nameproduct">zinc transport system ATP-binding protein
+                        TroB</td>
+                     <td class="transport protein">WP_010881611.1</td>
+                     <td class="transport strand">+1</td>
+                     <td class="transport sequence">MAEISATAYA ... VHDARAHASVL</td>
+                     <td class="transport length">266</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">P96117 e-value=0.0</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_48.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">49</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611129</td>
+                     <td class="transport swiss">P96118.1</td>
+                     <td class="transport locus">TP_RS00855</td>
+                     <td class="transport nameproduct">zinc transport system membrane protein
+                        TroC</td>
+                     <td class="transport protein">WP_010881612.1</td>
+                     <td class="transport strand">+1</td>
+                     <td class="transport sequence">MHALMRLFSD ... RRRVSLLQEEG</td>
+                     <td class="transport length">298</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">-</td>
+                     <td class="transport report"><a target="_blank" href="reports/Prot_49.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">50</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611135</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00860</td>
+                     <td class="transport nameproduct">zinc ABC transporter permease</td>
+                     <td class="transport protein">WP_010881613.1</td>
+                     <td class="transport strand">+1</td>
+                     <td class="transport sequence">MTMEVVLIAV ... SLAQARLDVSV</td>
+                     <td class="transport length">367</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">P96119 e-value=0.0</td>
+                     <td class="transport report"><a target="_blank" href="reports/">Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">51</td>
+                     <td class="procDNA ecnumber"></td>
+                     <td class="procDNA geneid">2611136</td>
+                     <td class="procDNA swiss"></td>
+                     <td class="procDNA locus">TP_RS00865</td>
+                     <td class="procDNA nameproduct">cation-activated repressor protein (troR)</td>
+                     <td class="procDNA protein">WP_010881614.1</td>
+                     <td class="procDNA strand">+1</td>
+                     <td class="procDNA sequence">MSLVSDIAAE ... DLYVEDDVPGV</td>
+                     <td class="procDNA length">153</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">No results</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/Prot_51.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">52</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611142</td>
+                     <td class="metabolism swiss">P96121.1</td>
+                     <td class="metabolism locus">TP_RS00870</td>
+                     <td class="metabolism nameproduct">2,3-bisphosphoglycerate-dependent
+                        phosphoglycerate mutase</td>
+                     <td class="metabolism protein">WP_010881615.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MKLVLIRHGE ... AQAVADQGKSN</td>
+                     <td class="metabolism length">251</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">-</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_52.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">53</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611347</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS00880</td>
+                     <td class="metabolism nameproduct"
+                        >5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase</td>
+                     <td class="metabolism protein">WP_010881617.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MTVGVFAALG ... VVASLFPMVVV</td>
+                     <td class="metabolism length">269</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">P96122 e-value=0.0</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/Prot_53.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">54</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611353</td>
+                     <td class="structure swiss"></td>
+                     <td class="structure locus">TP_RS00885</td>
+                     <td class="structure nameproduct">FMN-binding domain-containing protein</td>
+                     <td class="structure protein">WP_010881618.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MVKRGGAFAL ... RRGEKEAIISR</td>
+                     <td class="structure length">142</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast"> P16055 e-value=1.38559e-97</td>
+                     <td class="structure report"><a target="_blank" href="reports/Prot_54.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">55</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611359</td>
+                     <td class="unknown swiss">O83202.1</td>
+                     <td class="unknown locus">TP_RS00890</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881619.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MSDLEGLHLY ... SLSASRRVRPD</td>
+                     <td class="unknown length">175</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">56</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611360</td>
+                     <td class="unknown swiss">O83203.1</td>
+                     <td class="unknown locus">TP_RS00895</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881620.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MYFAILGTMS ... GTPPECPVSVF</td>
+                     <td class="unknown length">227</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">57</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611367</td>
+                     <td class="unknown swiss">O83204.1</td>
+                     <td class="unknown locus">TP_RS00900</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881621.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MQGQVLKKVL ... EDVLRYTRYNE</td>
+                     <td class="unknown length">280</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">58</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611372</td>
+                     <td class="unknown swiss">O83206.1</td>
+                     <td class="unknown locus">TP_RS00905</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881623.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MTNVFKKNIR ... ASGQVSTSVFS</td>
+                     <td class="unknown length">88</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">59</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611376</td>
+                     <td class="unknown swiss">O83207.1</td>
+                     <td class="unknown locus">TP_RS00910</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881624.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MSRTPRSFCG ... EIVQLRNKLSI</td>
+                     <td class="unknown length">436</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/Prot_sn.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">60</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611381</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00915</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881625.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MGLIARASRI ... FLQYETGETCR</td>
+                     <td class="unknown length">308</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83208 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_60.pdf "
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">61</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611382</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS00920</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881626.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MTQALQVPSA ... YKHLFDELGIS</td>
+                     <td class="unknown length">627</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83209 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_61.pdf "
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">62</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611390</td>
+                     <td class="unknown swiss">O83211.1</td>
+                     <td class="unknown locus">TP_RS00925</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881628.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MRIYLRVVLP ... LWGSARAYFKT</td>
+                     <td class="unknown length">147</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83211 e-value=6.76905e-104</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_62.pdf "
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">63</td>
+                     <td class="procDNA ecnumber"></td>
+                     <td class="procDNA geneid">2611391</td>
+                     <td class="procDNA swiss"></td>
+                     <td class="procDNA locus">TP_RS00930</td>
+                     <td class="procDNA nameproduct">double-stranded RNA binding</td>
+                     <td class="procDNA protein">WP_014342316.1</td>
+                     <td class="procDNA strand">+1</td>
+                     <td class="procDNA sequence">MRILKHEAQS ... SLPHVGEVCKE</td>
+                     <td class="procDNA length">212</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">Q499R4 e-value=1.09797e-12</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/protein_63.pdf "
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">64</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611416</td>
+                     <td class="unknown swiss">O83213.1</td>
+                     <td class="unknown locus">TP_RS00935</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881630.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MKKGVRSSRL ... YEEVPEEWVRN</td>
+                     <td class="unknown length">281</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83213 e-value=0.0</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_64.pdf "
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">65</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611245</td>
+                     <td class="procRNA swiss"></td>
+                     <td class="procRNA locus">TP_RS00940</td>
+                     <td class="procRNA nameproduct">SsrA-binding protein</td>
+                     <td class="procRNA protein">WP_010881631.1</td>
+                     <td class="procRNA strand">-1</td>
+                     <td class="procRNA sequence">MRGTGTHLIA ... ELSRSLCERHH</td>
+                     <td class="procRNA length">154</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83214 e-value=1.46221e-110</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_65.pdf "
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="protProc pos">66</td>
+                     <td class="protProc ecnumber"> 3.4.21.89 </td>
+                     <td class="protProc geneid">2611246</td>
+                     <td class="protProc swiss"></td>
+                     <td class="protProc locus">TP_RS00945</td>
+                     <td class="protProc nameproduct">S26 family signal peptidase</td>
+                     <td class="protProc protein">WP_010881632.1</td>
+                     <td class="protProc strand">+1</td>
+                     <td class="protProc sequence">MFARWRRYSY ... RYFPFGAFGVL</td>
+                     <td class="protProc length">235</td>
+                     <td class="protProc class">Protein Processing</td>
+                     <td class="protProc blast">P0A067 e-value=2.124e-11</td>
+                     <td class="protProc report"><a target="_blank" href="reports/protein_66.pdf "
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">67</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611703</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS00950</td>
+                     <td class="transport nameproduct">oxygen-independent coproporphyrinogen III
+                        oxidase</td>
+                     <td class="transport protein">WP_014342317.1</td>
+                     <td class="transport strand">+1</td>
+                     <td class="transport sequence">MVRAAHRAVP ... LREAFAELART</td>
+                     <td class="transport length">405</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">Q9CGF7 e-value=1.75071e-47</td>
+                     <td class="transport report"><a target="_blank" href="reports/protein_67.pdf "
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="protProc pos">68</td>
+                     <td class="protProc ecnumber">3.6.5.3</td>
+                     <td class="protProc geneid">2611695</td>
+                     <td class="protProc swiss">O83217.2</td>
+                     <td class="protProc locus">TP_RS00955</td>
+                     <td class="protProc nameproduct">elongation factor Tu</td>
+                     <td class="protProc protein">WP_010881634.1</td>
+                     <td class="protProc strand">+1</td>
+                     <td class="protProc sequence">MAKEKFARTK ... IASGQVTEILL</td>
+                     <td class="protProc length">395</td>
+                     <td class="protProc class">Protein Processing</td>
+                     <td class="protProc blast">O83217 e-value=0.0</td>
+                     <td class="protProc report"><a target="_blank" href="reports/protein_68.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">69</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611696</td>
+                     <td class="procRNA swiss">O83218.1</td>
+                     <td class="procRNA locus">TP_RS00960</td>
+                     <td class="procRNA nameproduct">30S ribosomal protein S10</td>
+                     <td class="procRNA protein">WP_010881635.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MARERIRVKL ... LSAGVDVRIKQ</td>
+                     <td class="procRNA length">102</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83218 e-value= 4.09115e-69</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_69.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">70</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611434</td>
+                     <td class="procRNA swiss">O83219</td>
+                     <td class="procRNA locus">TP_RS00965</td>
+                     <td class="procRNA nameproduct">50S ribosomal protein L3</td>
+                     <td class="procRNA protein">WP_010881636.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MVGLIGQKVG ... VFLRTAVKRER</td>
+                     <td class="procRNA length">208</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83219 e-value=1.82387e-147</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_70.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">71</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611441</td>
+                     <td class="procRNA swiss"></td>
+                     <td class="procRNA locus">TP_RS00970</td>
+                     <td class="procRNA nameproduct">50S ribosomal protein L4</td>
+                     <td class="procRNA protein">WP_010881637.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MEKTVYSVEG ... RSKDAAQDGTY</td>
+                     <td class="procRNA length">216</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83220 e-value=6.25036e-157</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_71.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">72</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611442</td>
+                     <td class="procRNA swiss">O83221.1</td>
+                     <td class="procRNA locus">TP_RS00975</td>
+                     <td class="procRNA nameproduct">50S ribosomal protein L23</td>
+                     <td class="procRNA protein">WP_010881638.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MEHTDVVIAP ... AGQSIGVLERA</td>
+                     <td class="procRNA length">94</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83221 e-value=1.09115e-61</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_72.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">73</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611715</td>
+                     <td class="procRNA swiss">O83222.1</td>
+                     <td class="procRNA locus">TP_RS00980</td>
+                     <td class="procRNA nameproduct">50S ribosomal protein L2</td>
+                     <td class="procRNA protein">WP_010881639.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MALKMYRPMT ... VSDRFIVSKRK</td>
+                     <td class="procRNA length">273</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83222 e-value=0.0</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_73.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">74</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611742</td>
+                     <td class="procRNA swiss">O83223.1</td>
+                     <td class="procRNA locus">TP_RS00985</td>
+                     <td class="procRNA nameproduct">30S ribosomal protein S19</td>
+                     <td class="procRNA protein">WP_010881640.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MSRSVKKGPF ... GHSGSDKKVGR</td>
+                     <td class="procRNA length">95</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83223 e-value=4.174e-64</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_74.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">75</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611743</td>
+                     <td class="procRNA swiss">O83224.1</td>
+                     <td class="procRNA locus">TP_RS00990</td>
+                     <td class="procRNA nameproduct">50S ribosomal protein L22</td>
+                     <td class="procRNA protein">WP_010881641.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MTERVTYRAK ... ESVRTKDGSKG</td>
+                     <td class="procRNA length">124</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83224 e-value=5.03192e-86</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_75.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">76</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611721</td>
+                     <td class="structure swiss"></td>
+                     <td class="structure locus">TP_RS00995</td>
+                     <td class="structure nameproduct">30S ribosomal protein S3</td>
+                     <td class="structure protein">WP_010881642.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MGQKVSPIGL ... VRDERTHAERG</td>
+                     <td class="structure length">247</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83225 e-value=0.0</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_76.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">77</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611804</td>
+                     <td class="structure swiss"></td>
+                     <td class="structure locus">TP_RS01000</td>
+                     <td class="structure nameproduct">50S ribosomal protein L16</td>
+                     <td class="structure protein">WP_010881643.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MALSPKRVKY ... KTRFAERVQEI</td>
+                     <td class="structure length">139</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83226 e-value=8.95482e-97</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_77.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">78</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611805</td>
+                     <td class="structure swiss">O83227.1</td>
+                     <td class="structure locus">TP_RS01005</td>
+                     <td class="structure nameproduct">50S ribosomal protein L29</td>
+                     <td class="structure protein">WP_010881644.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MGRGGCAQLS ... LTELEKRGVRE</td>
+                     <td class="structure length">72</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83227 e-value=2.4278e-44</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_78.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">79</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611322</td>
+                     <td class="structure swiss"></td>
+                     <td class="structure locus">TP_RS01010</td>
+                     <td class="structure nameproduct">30S ribosomal protein S17</td>
+                     <td class="structure protein">WP_014505429.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MEQCTVKRPE ... WRLVEIVERAK</td>
+                     <td class="structure length">89</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83228 e-value=8.92643e-53</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_79.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">80</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611168</td>
+                     <td class="structure swiss">O83229.1</td>
+                     <td class="structure locus">TP_RS01015</td>
+                     <td class="structure nameproduct">50S ribosomal protein L14</td>
+                     <td class="structure protein">WP_010881646.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MIQVQSRLNV ... TKIVSLAPEVL</td>
+                     <td class="structure length">122</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83229 e-value=2.01305e-81</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_80.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">81</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611169</td>
+                     <td class="procRNA swiss"></td>
+                     <td class="procRNA locus">TP_RS01020</td>
+                     <td class="procRNA nameproduct">50S ribosomal protein L24</td>
+                     <td class="procRNA protein">WP_010881647.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MGKTVKIRKD ... VRVCRKTGEVL</td>
+                     <td class="procRNA length">103</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83230 e-value=1.30096e-65</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_81.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">82</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611542</td>
+                     <td class="procRNA swiss">O83231.1</td>
+                     <td class="procRNA locus">TP_RS01025</td>
+                     <td class="procRNA nameproduct">50S ribosomal protein L5</td>
+                     <td class="procRNA protein">WP_010881648.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MTDHSCIPEL ... LLTKLGMPFRK</td>
+                     <td class="procRNA length">185</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83231 e-value=2.43527e-133</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_82.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">83</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611578</td>
+                     <td class="procRNA swiss">O83233.1</td>
+                     <td class="procRNA locus">TP_RS01030</td>
+                     <td class="procRNA nameproduct">30S ribosomal protein S8</td>
+                     <td class="procRNA protein">WP_010881650.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MGVSDPVADM ... RVGGELICKVW</td>
+                     <td class="procRNA length">132</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">O83233 e-value=1.1623e-91</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_83.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">84</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611614</td>
+                     <td class="structure swiss"></td>
+                     <td class="structure locus">TP_RS01035</td>
+                     <td class="structure nameproduct">50S ribosomal protein L6</td>
+                     <td class="structure protein">WP_010881651.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MSRIGKVPVS ... IVRKVGKSGVK</td>
+                     <td class="structure length">179</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83234 e-value=5.01012e-122</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_84.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">85</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611632</td>
+                     <td class="structure swiss">O83235.1</td>
+                     <td class="structure locus">TP_RS01040</td>
+                     <td class="structure nameproduct">50S ribosomal protein L18</td>
+                     <td class="structure protein">WP_010881652.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MLRKCSDKQR ... ADGARKAGVKF</td>
+                     <td class="structure length">120</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83235 e-value=6.0408e-82</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_85.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">86</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611633</td>
+                     <td class="structure swiss">O83236.1</td>
+                     <td class="structure locus">TP_RS01045</td>
+                     <td class="structure nameproduct">30S ribosomal protein S5</td>
+                     <td class="structure protein">WP_010881653.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MDRHRDFGKD ... ERGKALVDMWG</td>
+                     <td class="structure length">172</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83236 e-value= 2.57631e-119</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_86.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">87</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611357</td>
+                     <td class="structure swiss">B2S2F4.1</td>
+                     <td class="structure locus">TP_RS01050</td>
+                     <td class="structure nameproduct">50S ribosomal protein L30</td>
+                     <td class="structure protein">WP_010881654.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MTKRVRITLV ... VSHLVRVEELG</td>
+                     <td class="structure length">61</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">B2S2F4 e-value=1.75725e-34</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_87.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">88</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611649</td>
+                     <td class="structure swiss">O83237.1</td>
+                     <td class="structure locus">TP_RS01055</td>
+                     <td class="structure nameproduct">50S ribosomal protein L15</td>
+                     <td class="structure protein">WP_010881655.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MADFHLIAPK ... GSVECIEAQER</td>
+                     <td class="structure length">153</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83237 e-value=8.69041e-107</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_88.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">89</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611691</td>
+                     <td class="structure swiss"></td>
+                     <td class="structure locus">TP_RS01060</td>
+                     <td class="structure nameproduct">preprotein translocase subunit SecY</td>
+                     <td class="structure protein">WP_010881656.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MKQGVFAAVF ... SGYLRKDVYEE</td>
+                     <td class="structure length">450</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O51451 e-value=7.34086e-121</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_89.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">90</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611454</td>
+                     <td class="structure swiss">O83240.1</td>
+                     <td class="structure locus">TP_RS01065</td>
+                     <td class="structure nameproduct">30S ribosomal protein S13</td>
+                     <td class="structure protein">WP_010881658.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MARIAGVDLP ... GKRKTVAGKKK</td>
+                     <td class="structure length">121</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83240 e-value=1.22327e-81</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_90.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">91</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611468</td>
+                     <td class="structure swiss"></td>
+                     <td class="structure locus">TP_RS01070</td>
+                     <td class="structure nameproduct">30S ribosomal protein S11</td>
+                     <td class="structure protein">WP_010881659.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MAVTKKRKEK ... NGCRPRKTRRI</td>
+                     <td class="structure length">126</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83241 e-value=5.79628e-89</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_91.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">92</td>
+                     <td class="procDNA ecnumber">2.7.7.6</td>
+                     <td class="procDNA geneid">2611469</td>
+                     <td class="procDNA swiss">O83242.1</td>
+                     <td class="procDNA locus">TP_RS01075</td>
+                     <td class="procDNA nameproduct">DNA-directed RNA polymerase subunit alpha</td>
+                     <td class="procDNA protein">WP_010881660.1</td>
+                     <td class="procDNA strand">+1</td>
+                     <td class="procDNA sequence">MPRRNLLKGF ... LMRQKEEIDEA</td>
+                     <td class="procDNA length">351</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">O83242 e-value= 0.0</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/protein_92.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="structure pos">93</td>
+                     <td class="structure ecnumber"></td>
+                     <td class="structure geneid">2611485</td>
+                     <td class="structure swiss">O83243.1</td>
+                     <td class="structure locus">TP_RS01080</td>
+                     <td class="structure nameproduct">50S ribosomal protein L17</td>
+                     <td class="structure protein">WP_010881661.1</td>
+                     <td class="structure strand">+1</td>
+                     <td class="structure sequence">MRHRTGFNPL ... GQSQKIGKKKE</td>
+                     <td class="structure length">164</td>
+                     <td class="structure class">Structure</td>
+                     <td class="structure blast">O83243 e-value=8.03195e-117</td>
+                     <td class="structure report"><a target="_blank" href="reports/protein_93.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">94</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611498</td>
+                     <td class="unknown swiss">O83244.1</td>
+                     <td class="unknown locus">TP_RS01085</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881662.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MSKAHRGKGI ... RKRRLDAQPGA</td>
+                     <td class="unknown length">65</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_94.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">95</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611499</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS01090</td>
+                     <td class="metabolism nameproduct">nucleotide exchange factor GrpE</td>
+                     <td class="metabolism protein">WP_010881663.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MCGGDVQGQG ... TEPDRGDGPSE</td>
+                     <td class="metabolism length">220</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">O83245 e-value=6.00129e-158</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/protein_95.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">96</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611514</td>
+                     <td class="metabolism swiss">O83246.1</td>
+                     <td class="metabolism locus">TP_RS01095</td>
+                     <td class="metabolism nameproduct">molecular chaperone DnaK</td>
+                     <td class="metabolism protein">WP_010881664.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MGKIIGIDLG ... DYEVVKDEDSK</td>
+                     <td class="metabolism length">635</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">O83246 e-value= 0.0</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/protein_96.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">97</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611350</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS01100</td>
+                     <td class="unknown nameproduct">molecular chaperone DnaJ</td>
+                     <td class="unknown protein"></td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">not found ... </td>
+                     <td class="unknown length">0</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_97.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">98</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611799</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS01105</td>
+                     <td class="unknown nameproduct">sigma factor SigB regulation protein</td>
+                     <td class="unknown protein">WP_010881666.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MIRRRLAIVK ... DMTIVTVQVKR</td>
+                     <td class="unknown length">489</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_98.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">99</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611800</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS01110</td>
+                     <td class="unknown nameproduct">sigma factor SigG regulation protein</td>
+                     <td class="unknown protein">WP_010881667.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MGLLFFSYLF ... TVLAIKCLGPR</td>
+                     <td class="unknown length">715</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_99.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">100</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611727</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS01115</td>
+                     <td class="metabolism nameproduct">anti-sigma F factor antagonist</td>
+                     <td class="metabolism protein">WP_010881668.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MDNINIAKDV ... FTVIKSLDELD</td>
+                     <td class="metabolism length">108</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">P70877 e-value= 2.07302e-06 </td>
+                     <td class="metabolism report"><a target="_blank" href="reports/protein_100.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="metabolism pos">101</td>
+                     <td class="metabolism ecnumber"></td>
+                     <td class="metabolism geneid">2611809</td>
+                     <td class="metabolism swiss"></td>
+                     <td class="metabolism locus">TP_RS01120</td>
+                     <td class="metabolism nameproduct">peptidase M15</td>
+                     <td class="metabolism protein">WP_010881669.1</td>
+                     <td class="metabolism strand">+1</td>
+                     <td class="metabolism sequence">MARWNCVCVC ... FIHEWKVNASS</td>
+                     <td class="metabolism length">260</td>
+                     <td class="metabolism class">Metabolism</td>
+                     <td class="metabolism blast">-</td>
+                     <td class="metabolism report"><a target="_blank" href="reports/protein_101.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">102</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611810</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS01125</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881670.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MWKRGVGALL ... AIGAGIYAAVK</td>
+                     <td class="unknown length">148</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">O83251 e-value=4.51251e-99</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_102.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">103</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611157</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS01130</td>
+                     <td class="unknown nameproduct">pyridoxal phosphate-dependent aspartate
+                        aminotransferase</td>
+                     <td class="unknown protein">WP_014342329.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MDLSEGARAL ... QLSCVGEGSRS</td>
+                     <td class="unknown length">479</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_103.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">104</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611163</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS01135</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881673.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MPKQVVVFAM ... SVRKLGYKGEF</td>
+                     <td class="unknown length">246</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">Q8MTI2 e-value=8.42205e-25</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_104.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">105</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611582</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS01160</td>
+                     <td class="unknown nameproduct">hypothetical protein</td>
+                     <td class="unknown protein">WP_010881674.1</td>
+                     <td class="unknown strand">-1</td>
+                     <td class="unknown sequence">MFFSLYERRQ ... FKVSDNILSSE</td>
+                     <td class="unknown length">228</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_105.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">106</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">2611583</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS01165</td>
+                     <td class="transport nameproduct">cobalt ABC transporter ATP-binding
+                        protein</td>
+                     <td class="transport protein">WP_010881675.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MSADVAADTA ... CPLTLSDLLWT</td>
+                     <td class="transport length">255</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">-</td>
+                     <td class="transport report"><a target="_blank" href="reports/protein_106.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="transport pos">107</td>
+                     <td class="transport ecnumber"></td>
+                     <td class="transport geneid">23365981</td>
+                     <td class="transport swiss"></td>
+                     <td class="transport locus">TP_RS01170</td>
+                     <td class="transport nameproduct">biotin transporter BioY</td>
+                     <td class="transport protein">WP_013944910.1</td>
+                     <td class="transport strand">-1</td>
+                     <td class="transport sequence">MHRSKSLAFV ... PTVRRHLYRHG</td>
+                     <td class="transport length">192</td>
+                     <td class="transport class">Transport</td>
+                     <td class="transport blast">-</td>
+                     <td class="transport report"><a target="_blank" href="reports/protein_107.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="unknown pos">108</td>
+                     <td class="unknown ecnumber"></td>
+                     <td class="unknown geneid">2611600</td>
+                     <td class="unknown swiss"></td>
+                     <td class="unknown locus">TP_RS01175</td>
+                     <td class="unknown nameproduct">DNA polymerase</td>
+                     <td class="unknown protein">WP_014342334.1</td>
+                     <td class="unknown strand">+1</td>
+                     <td class="unknown sequence">MYAVYGRLSP ... LQLKQDAHMPI</td>
+                     <td class="unknown length">270</td>
+                     <td class="unknown class">Unknown</td>
+                     <td class="unknown blast">-</td>
+                     <td class="unknown report"><a target="_blank" href="reports/protein_108.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">109</td>
+                     <td class="procDNA ecnumber"></td>
+                     <td class="procDNA geneid">2611615</td>
+                     <td class="procDNA swiss">O83258.1</td>
+                     <td class="procDNA locus">TP_RS01180</td>
+                     <td class="procDNA nameproduct"></td>
+                     <td class="procDNA protein">WP_010881678.1</td>
+                     <td class="procDNA strand">+1</td>
+                     <td class="procDNA sequence">MAPWLELVFD ... VESDVDPVNVL</td>
+                     <td class="procDNA length">657</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">-</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/protein_109.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procRNA pos">110</td>
+                     <td class="procRNA ecnumber"></td>
+                     <td class="procRNA geneid">2611616</td>
+                     <td class="procRNA swiss"></td>
+                     <td class="procRNA locus">TP_RS01185</td>
+                     <td class="procRNA nameproduct">RNA pseudouridine synthase</td>
+                     <td class="procRNA protein">WP_010881679.1</td>
+                     <td class="procRNA strand">+1</td>
+                     <td class="procRNA sequence">MALPIIFQDA ... HFLRALDAVAL</td>
+                     <td class="procRNA length">216</td>
+                     <td class="procRNA class">RNA Processing</td>
+                     <td class="procRNA blast">-</td>
+                     <td class="procRNA report"><a target="_blank" href="reports/protein_110.pdf"
+                           >Open</a></td>
+                  </tr>
+
+                  <tr>
+                     <td class="procDNA pos">111</td>
+                     <td class="procDNA ecnumber"></td>
+                     <td class="procDNA geneid">2611682</td>
+                     <td class="procDNA swiss"></td>
+                     <td class="procDNA locus">TP_RS01190</td>
+                     <td class="procDNA nameproduct">anti-sigma F factor antagonist</td>
+                     <td class="procDNA protein">WP_010881681.1</td>
+                     <td class="procDNA strand">+1</td>
+                     <td class="procDNA sequence">MGTVVPGFDD ... ALDASAHVSLG</td>
+                     <td class="procDNA length">181</td>
+                     <td class="procDNA class">DNA Processing</td>
+                     <td class="procDNA blast">Q7WLU9 e-value=8.97953e-13</td>
+                     <td class="procDNA report"><a target="_blank" href="reports/protein_111.pdf"
+                           >Open</a></td>
+                  </tr>
+
+               </tbody>
+            </table>
+         </div>
+         <div id="myPopoverContent">
+            <table class="table centered-table">
+               <tr>
+                  <td>Metabolism</td>
+                  <td class="metabolismx"></td>
+               </tr>
+               <tr>
+                  <td>Transport</td>
+                  <td class="transportx"></td>
+               </tr>
+               <tr>
+                  <td>DNA Processing</td>
+                  <td class="procDNAx"></td>
+               </tr>
+               <tr>
+                  <td>RNA Processing</td>
+                  <td class="procRNAx"></td>
+               </tr>
+               <tr>
+                  <td>Transcription Regulator</td>
+                  <td class="transRegx"></td>
+               </tr>
+               <tr>
+                  <td>Structure</td>
+                  <td class="structurex"></td>
+               </tr>
+               <tr>
+                  <td>Protein Processing</td>
+                  <td class="protProcx"></td>
+               </tr>
+               <tr>
+                  <td>Unknown</td>
+                  <td class="unknownx"></td>
+               </tr>
+            </table>
+         </div>
+      </section>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+      <script type="text/javascript">
+			$(document).ready(function()
+			{
+				$('#search').keyup(function()
+				{
+					searchTable($(this).val());
+				});
+			});
+			function searchTable(inputVal)
+			{
+				var table = $('#tblData');
+				table.find('tr').each(function(index, row)
+				{
+					var allCells = $(row).find('td');
+					if(allCells.length > 0)
+					{
+						var found = false;
+						allCells.each(function(index, td)
+						{
+							var regExp = new RegExp(inputVal, 'i');
+							if(regExp.test($(td).text()))
+							{
+								found = true;
+								return false;
+							}
+						});
+						if(found == true)$(row).show();else $(row).hide();
+					}
+				});
+			}
+		</script>
+      <script src="js/demo.min.js"></script><script src="js/Chart.js"></script><script src="js/jquery.js"></script><script src="js/bootstrap.min.js"></script><script src="js/jquery.easing.min.js"></script><script src="js/scrolling-nav.js"></script></body>
+</html>
